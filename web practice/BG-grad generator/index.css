@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.copyCode {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.8rem;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    border-left: 3px solid #fff;
+    background-color: rgba(189, 189, 189, 0.1);
+    padding: 15px 8px 15px 17px;
+    border-radius: 5px;
+}
+
