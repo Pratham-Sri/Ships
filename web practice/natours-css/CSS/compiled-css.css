@@ -467,20 +467,21 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
-  display: block; }
-  /* line 18, sass/components/_form.scss */
+  display: block;
+  transition: all .3s; }
+  /* line 19, sass/components/_form.scss */
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #7ed56f; }
-    /* line 22, sass/components/_form.scss */
+    /* line 23, sass/components/_form.scss */
     .form__input:focus:invalid {
       border-bottom: 3px solid #ff7730; }
-  /* line 27, sass/components/_form.scss */
+  /* line 28, sass/components/_form.scss */
   .form__input::-webkit-input-placeholder {
     color: #999; }
 
-/* line 33, sass/components/_form.scss */
+/* line 34, sass/components/_form.scss */
 .form__label {
   font-size: 1.2rem;
   font-weight: 700;
@@ -489,11 +490,34 @@ body {
   display: block;
   transition: all .2s; }
 
-/* line 42, sass/components/_form.scss */
+/* line 43, sass/components/_form.scss */
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
+
+/* line 49, sass/components/_form.scss */
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+/* line 54, sass/components/_form.scss */
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem; }
+
+/* line 61, sass/components/_form.scss */
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #7ed56f;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -.1rem;
+  left: 0; }
 
 /* line 1, sass/layout/_grid.scss */
 .row {
